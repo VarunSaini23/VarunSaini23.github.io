@@ -5,7 +5,8 @@ const intro = (props) => {
   return (
     <div className={styles.Intro}>
       <p>
-        Hello, World, i am <span className={styles.Name}>Varun Saini</span>
+        Hello, World, i am{" "}
+        <span className={styles.Name}>Varun Saini YUP I KNOW</span>
       </p>
       <div className={styles.HalfParas}>
         <p className={styles.Left}>
