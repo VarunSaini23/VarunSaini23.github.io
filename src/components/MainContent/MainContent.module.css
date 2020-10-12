@@ -1,0 +1,18 @@
+.MainContent {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 760px) {
+  .MainContent {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MainContent {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

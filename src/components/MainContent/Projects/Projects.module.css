@@ -1,0 +1,15 @@
+.MoreProjectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Projects {
+  /* height: 100vh; */
+}
+
+.ProjectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

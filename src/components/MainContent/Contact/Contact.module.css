@@ -1,0 +1,51 @@
+.Contact {
+  /* height: 100vh; */
+  padding-top: 50px;
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  /* text-align: left; */
+}
+
+.FormContainer .FormNEP {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.FormContainer .FormNEP input {
+  flex: 0 49%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  padding: 5px 10px;
+  font-size: large;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.FormContainer textarea {
+  -webkit-appearance: none;
+  padding: 5px 10px;
+  font-size: large;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.Shoot {
+  margin-top: 10px;
+  background: none;
+  color: inherit;
+  border: 1px solid gray;
+  width: 10%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 20px 40px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

@@ -1,0 +1,36 @@
+.Intro {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left;
+  height: 100vh;
+}
+
+.Name {
+  display: block;
+  font-size: xx-large;
+}
+
+.HalfParas {
+  display: flex;
+}
+
+.Left {
+  flex: 2;
+}
+
+.Right {
+  flex: 1;
+}
+
+@media screen and (max-width: 760px) {
+  .Intro {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+
+  .Right {
+    display: none;
+  }
+}

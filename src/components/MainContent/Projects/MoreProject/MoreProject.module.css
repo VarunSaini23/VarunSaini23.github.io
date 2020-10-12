@@ -1,0 +1,66 @@
+.MoreProject {
+  border: 1px solid yellow;
+  background-color: black;
+  flex: 0 49%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.TitleIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.Icons {
+  display: flex;
+  justify-content: right;
+}
+
+.SVG {
+  width: 30px;
+  height: 30px;
+  fill: gray;
+  stroke: black;
+  margin-left: 10px;
+}
+
+.SVG:hover {
+  fill: aliceblue;
+  stroke: aliceblue;
+  transition: all 300ms ease;
+}
+
+.TechStack {
+  margin-top: 5px;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.TechStack div {
+  color: gray;
+  margin-left: 10px;
+  /* border: 1px solid gray; */
+  border-radius: 4px;
+  padding: 1px 2px;
+}
+
+.TechStack div:hover {
+  color: aliceblue;
+  border-color: aliceblue;
+  transition: all 300ms ease;
+}
+
+@media screen and (max-width: 500px) {
+  .MoreProject {
+    flex: 0 100%;
+    width: 100%;
+  }
+}

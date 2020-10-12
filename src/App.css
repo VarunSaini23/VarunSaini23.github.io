@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* animation for experience list */
+.fade-enter {
+  background-color: transparent;
+}
+.fade-enter-active {
+  opacity: 1;
+  background-color: #61dafb;
+  font-weight: bolder;
+  transition: all 500ms ease;
+}
+/* .fade-exit {
+  background-color: #61dafb;
+  font-weight: bolder;
+}
+.fade-exit-active {
+  opacity: 1;
+  background-color: transparent;
+  font-weight: bolder;
+  transition: all 500ms;
+} */
