@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf40ae5d.chunk.css",
-    "main.js": "/static/js/main.ba6fefde.chunk.js",
-    "main.js.map": "/static/js/main.ba6fefde.chunk.js.map",
+    "main.css": "/static/css/main.100d5fa0.chunk.css",
+    "main.js": "/static/js/main.3ec5dcc4.chunk.js",
+    "main.js.map": "/static/js/main.3ec5dcc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.80a3bced.js",
     "runtime-main.js.map": "/static/js/runtime-main.80a3bced.js.map",
     "static/css/2.fb230578.chunk.css": "/static/css/2.fb230578.chunk.css",
-    "static/js/2.c14b0b29.chunk.js": "/static/js/2.c14b0b29.chunk.js",
-    "static/js/2.c14b0b29.chunk.js.map": "/static/js/2.c14b0b29.chunk.js.map",
+    "static/js/2.b1f15e48.chunk.js": "/static/js/2.b1f15e48.chunk.js",
+    "static/js/2.b1f15e48.chunk.js.map": "/static/js/2.b1f15e48.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.da847a3552b0d7e4e9b8c393d61e0dd0.js": "/precache-manifest.da847a3552b0d7e4e9b8c393d61e0dd0.js",
+    "precache-manifest.033fb04f7feaca2b726c388a11b4b574.js": "/precache-manifest.033fb04f7feaca2b726c388a11b4b574.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb230578.chunk.css.map": "/static/css/2.fb230578.chunk.css.map",
-    "static/css/main.bf40ae5d.chunk.css.map": "/static/css/main.bf40ae5d.chunk.css.map",
-    "static/js/2.c14b0b29.chunk.js.LICENSE.txt": "/static/js/2.c14b0b29.chunk.js.LICENSE.txt",
+    "static/css/main.100d5fa0.chunk.css.map": "/static/css/main.100d5fa0.chunk.css.map",
+    "static/js/2.b1f15e48.chunk.js.LICENSE.txt": "/static/js/2.b1f15e48.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/JosefinSans-Regular.6762afec.ttf",
+    "static/media/bitmojihi.png": "/static/media/bitmojihi.25370533.png",
+    "static/media/bitmojilappy.png": "/static/media/bitmojilappy.07da7391.png",
+    "static/media/bitmojithanku.png": "/static/media/bitmojithanku.3c7e0235.png",
     "static/media/github.4b68bf6c.svg": "/static/media/github.4b68bf6c.svg",
+    "static/media/handWave.png": "/static/media/handWave.5e4bc1a5.png",
     "static/media/java.svg": "/static/media/java.00d7cdd3.svg",
     "static/media/link.83062fff.svg": "/static/media/link.83062fff.svg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
@@ -29,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.80a3bced.js",
     "static/css/2.fb230578.chunk.css",
-    "static/js/2.c14b0b29.chunk.js",
-    "static/css/main.bf40ae5d.chunk.css",
-    "static/js/main.ba6fefde.chunk.js"
+    "static/js/2.b1f15e48.chunk.js",
+    "static/css/main.100d5fa0.chunk.css",
+    "static/js/main.3ec5dcc4.chunk.js"
   ]
 }
