@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e90926485a3fcfb9121c7afdf5753334",
+    "revision": "e4d6205e712c78d6b8914131927677a8",
     "url": "/index.html"
   },
   {
-    "revision": "d59af9d6e40b53a47805",
+    "revision": "56813c20d52d07e7e1ba",
     "url": "/static/css/2.fb230578.chunk.css"
   },
   {
-    "revision": "4db2c1bba8cc67ee3567",
-    "url": "/static/css/main.a11c2662.chunk.css"
+    "revision": "3341aeb0c4d29a33df15",
+    "url": "/static/css/main.e7a96857.chunk.css"
   },
   {
-    "revision": "d59af9d6e40b53a47805",
-    "url": "/static/js/2.57cdb9e7.chunk.js"
+    "revision": "56813c20d52d07e7e1ba",
+    "url": "/static/js/2.169e42d8.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.57cdb9e7.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.169e42d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4db2c1bba8cc67ee3567",
-    "url": "/static/js/main.c68bd423.chunk.js"
+    "revision": "3341aeb0c4d29a33df15",
+    "url": "/static/js/main.edcba1c4.chunk.js"
   },
   {
     "revision": "26590c0f50dd680d7c8e",
     "url": "/static/js/runtime-main.80a3bced.js"
+  },
+  {
+    "revision": "ba32e9863761cf72f378cc16b5123854",
+    "url": "/static/media/Chilanka-Regular.ba32e986.ttf"
   },
   {
     "revision": "9ac2a60828c8f6e627f4f628899398f0",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6762afeccd02d16a80409b78fb85251c",
     "url": "/static/media/JosefinSans-Regular.6762afec.ttf"
+  },
+  {
+    "revision": "14d2d9d36cde446b6b171c1ebe465b4f",
+    "url": "/static/media/Nanum-Regular.14d2d9d3.ttf"
   },
   {
     "revision": "25370533f04a3de86c044998e1421360",
@@ -116,8 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/varsmovies2.996f252f.jpg"
   },
   {
-    "revision": "5735503c7c9114dd7774f72006a9da7d",
-    "url": "/static/media/varsmovies3.5735503c.jpg"
+    "revision": "fadf635ddee3d8e331312606ccae2f1e",
+    "url": "/static/media/varsmovies3.fadf635d.jpg"
   },
   {
     "revision": "bb6332574891ff6d94b9e6bd54485c1b",
