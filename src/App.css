@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: justify;
+  font-family: JosefinSans, Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 760px) {
@@ -8,23 +9,47 @@
   }
 }
 
-/* animation for experience list */
+@font-face {
+  font-family: "JosefinSans";
+  src: local("JosefinSans"),
+    url(./fonts/JosefinSans/JosefinSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  font-weight: 900;
+  src: local("JosefinSans"),
+    url(./fonts/JosefinSans/JosefinSans-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Chilanka";
+  src: local("Chilanka"),
+    url(./fonts/Chilanka/Chilanka-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Nanum";
+  src: local("Nanum"), url(./fonts/Nanum/Nanum-Regular.ttf) format("opentype");
+}
+
+/* @font-face {
+    font-family: 'JosefinSans';
+    font-weight: 900;
+    src: local('JosefinSans'), url(./fonts/JosefinSans-Black.otf) format('opentype');
+} */
+
 .fade-enter {
-  background-color: transparent;
+  opacity: 0;
 }
 .fade-enter-active {
   opacity: 1;
-  background-color: #61dafb;
-  font-weight: bolder;
-  transition: all 500ms ease;
+  transition: opacity 500ms;
 }
-/* .fade-exit {
-  background-color: #61dafb;
-  font-weight: bolder;
+.fade-exit {
+  opacity: 1;
 }
 .fade-exit-active {
-  opacity: 1;
-  background-color: transparent;
-  font-weight: bolder;
-  transition: all 500ms;
-} */
+  opacity: 0;
+  transition: opacity 500ms;
+}

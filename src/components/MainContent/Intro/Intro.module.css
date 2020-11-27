@@ -1,33 +1,194 @@
 .Intro {
-  padding-top: 100px;
+  /* padding-top: 50px; */
   padding-left: 100px;
   padding-right: 100px;
   text-align: left;
+  /* background-color: blue; */
   height: 100vh;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.Hi {
+  font-size: 2rem;
+}
+
+.WaveHand {
+  margin-left: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  animation: shake2 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation-delay: 1s;
+}
+
+.SubIntro {
+  position: relative;
+  opacity: 0;
+  left: 20px;
+  font-size: 1rem;
+}
+
+.First {
+  position: relative;
+  opacity: 0;
+  left: 20px;
+}
+
+.Second {
+  position: relative;
+  left: 20px;
+  opacity: 0;
+}
+
+.Show {
+  opacity: 1;
+  left: 0;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, -0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake2 {
+  /* 0% {
+    transform: translate3d(0, 0, 0);
+  } */
+
+  40%,
+  60% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  42%,
+  58% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  45%,
+  50%,
+  55% {
+    transform: translate3d(-4px, -0, 0);
+  }
+
+  47%,
+  53% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.ChangingText {
+  color: blanchedalmond;
+  /* animation: changeText 3s linear infinite; */
+}
+
+@keyframes changeText {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  7%,
+  93% {
+    opacity: 0.3;
+  }
+
+  15%,
+  85% {
+    opacity: 0.5;
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+  }
 }
 
 .Name {
-  display: block;
-  font-size: xx-large;
+  font-size: 3rem;
 }
-
+/* 
 .HalfParas {
   display: flex;
-}
+} */
 
 .Left {
   flex: 2;
+  /* background-color: yellow; */
 }
 
 .Right {
   flex: 1;
+  /* background-color: brown; */
+}
+
+.Right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.GetInTouchButton,
+.Resume {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.GetInTouchButton:hover,
+.Resume:hover {
+  background-color: rgba(243, 237, 237, 0.062);
+  transition: all 500ms ease-in-out;
 }
 
 @media screen and (max-width: 760px) {
   .Intro {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+  }
+
+  .Right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Intro {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1rem;
+    /* padding-top: 25px; */
   }
 
   .Right {

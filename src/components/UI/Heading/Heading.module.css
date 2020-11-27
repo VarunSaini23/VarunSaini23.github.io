@@ -2,15 +2,18 @@
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+  width: 70%;
+  padding-top: 50px;
 }
 
 .Heading {
   font-size: 2em;
   padding-right: 20px;
+  text-align: left;
 }
 
 .HorizontalLine {
   height: 2px;
-  width: 300px;
+  flex: 1;
   background-color: aqua;
 }

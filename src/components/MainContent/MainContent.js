@@ -6,6 +6,7 @@ import styles from "./MainContent.module.css";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import ThankYou from "./ThankYou/ThankYou";
 
 const mainContent = (props) => {
   return (
@@ -13,9 +14,9 @@ const mainContent = (props) => {
       <Background backgroundRef={props.backgroundRef} />
       <Skills skillsRef={props.skillsRef} />
       <Experience experienceRef={props.experienceRef} />
-      <Projects></Projects>
-      <Contact />
-      <h2>Thank you</h2>
+      <Projects projectsRef={props.projectsRef}></Projects>
+      <Contact contactRef={props.contactRef} />
+      <ThankYou />
     </div>
   );
 };

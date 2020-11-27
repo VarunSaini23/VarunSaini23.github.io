@@ -1,11 +1,21 @@
 .MoreProject {
-  border: 1px solid yellow;
-  background-color: black;
+  border: 1px solid black;
+  position: relative;
+  bottom: 0px;
+  transition: all 300ms ease;
+  background-color: rgba(169, 169, 169, 0.082);
   flex: 0 49%;
   width: 100%;
   box-sizing: border-box;
+  border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px;
+  box-shadow: rgba(169, 169, 169, 0.308) 0px 2px 4px;
+}
+
+.MoreProject:hover {
+  bottom: 7px;
+  transition: all 300ms ease;
 }
 
 .TitleIcons {
@@ -16,6 +26,7 @@
 h3 {
   margin: 0;
   padding: 0;
+  color: blanchedalmond;
 }
 
 .Icons {

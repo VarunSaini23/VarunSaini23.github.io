@@ -4,6 +4,7 @@ ul {
 
 .Skills ul > li:nth-child(1) {
   font-weight: bolder;
+  font-style: italic;
 }
 
 .Left {
@@ -22,7 +23,7 @@ ul {
 }
 
 .Left li:hover {
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 .Right {
@@ -41,7 +42,6 @@ ul {
 }
 
 .Skills {
-  padding-top: 50px;
   /* height: 100vh; */
 }
 

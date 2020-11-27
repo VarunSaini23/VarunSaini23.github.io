@@ -1,0 +1,25 @@
+.ThankYou {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ThankYouBitmoji {
+  text-align: right;
+}
+
+.ThankYouBitmoji img {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .ThankYou {
+    flex-direction: column;
+  }
+  .ThankYouBitmoji {
+    text-align: center;
+    padding-top: 20px;
+  }
+}

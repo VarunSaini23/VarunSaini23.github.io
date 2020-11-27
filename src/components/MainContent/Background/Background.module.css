@@ -1,6 +1,4 @@
 .Background {
-  padding-top: 50px;
-  text-align: left;
   display: flex;
   /* flex-wrap: wrap; */
   /* height: 100vh; */
@@ -20,7 +18,13 @@
 }
 
 .Right img {
-  max-width: 50%;
+  max-width: 100%;
   /* min-width: 50%; */
   height: auto;
+}
+
+@media screen and (max-width: 760px) {
+  .Background {
+    flex-direction: column;
+  }
 }

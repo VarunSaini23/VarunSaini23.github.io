@@ -1,24 +1,22 @@
 .FullNavigationBottom {
   position: absolute;
   width: 100%;
-  bottom: 0;
-  background-color: black;
+  bottom: 0px;
+  background-color: white;
   z-index: 1000;
 }
 
 .FullNavigationTop {
   position: fixed;
   width: 100%;
-  top: 0;
-  background-color: black;
+  top: 0px;
+  left: 0px;
+  background-color: white;
   z-index: 1000;
 }
 
-/* .Navigation {
-  padding: 10px;
-} */
-
 .NavItems {
+  cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -28,23 +26,22 @@
 .NavItems div {
   flex: 1;
   padding: 20px;
+  color: black;
+  text-align: center;
 }
+
+/* .NavItems div:hover {
+  background-color: aqua;
+} */
 
 .NavItems div:hover {
   background-color: aqua;
-}
-
-.NavItems div:hover {
-  background-color: blueviolet;
   transition: all 500ms ease;
-}
-
-.Navigation {
 }
 
 .NavigationBottomBar {
   position: relative;
-  height: 10px;
+  height: 5px;
   width: 30px;
   background-color: aqua;
   transition: all 500ms ease;
@@ -53,13 +50,11 @@
 @media screen and (max-width: 535px) {
   .NavItems div {
     padding: 10px;
-    /* font-size: 0.8em; */
   }
 }
 
 @media screen and (max-width: 400px) {
   .NavItems div {
     padding: 5px;
-    font-size: 0.8em;
   }
 }

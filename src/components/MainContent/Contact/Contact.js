@@ -5,6 +5,7 @@ import Shake from "react-reveal/Shake";
 import Fade from "react-reveal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "../../../axios-contact";
 
 class Contact extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Contact extends Component {
   };
 
   handleInputFocus = (event) => {
-    event.target.style.border = "1px solid blue";
+    event.target.style.border = "2px solid yellow";
     event.target.style.transition = "all 300ms";
   };
 
@@ -47,15 +48,15 @@ class Contact extends Component {
   handleSubmit = (event) => {
     if (this.state.name === "") {
       //   window.getComputedStyle(this.nameRef.current).border = "2px solid red";
-      this.nameRef.current.style.border = "1px solid red";
+      this.nameRef.current.style.border = "2px solid red";
       this.setState({ readyToSubmit: 1 });
     }
     if (this.state.email === "") {
-      this.emailRef.current.style.border = "1px solid red";
+      this.emailRef.current.style.border = "2px solid red";
       this.setState({ readyToSubmit: 1 });
     }
     if (this.state.message === "") {
-      this.messageeRef.current.style.border = "1px solid red";
+      this.messageeRef.current.style.border = "2px solid red";
       this.setState({ readyToSubmit: 1 });
     }
 
@@ -64,14 +65,47 @@ class Contact extends Component {
       this.state.email !== "" &&
       this.state.message !== ""
     ) {
-      this.notify();
+      const details = {
+        "name":this.state.name,
+        "email":this.state.email,
+        "phone":this.state.phone,
+        "message":this.state.message,
+      }
+      this.notifyWait();
+      axios.post("/contact.json", details)
+        .then(response => this.notifySuccess())
+      .catch(error => this.notifyFailure())
+      
     }
   };
 
-  notify = () =>
-    toast.dark("🦄 Please Wait", {
+notifyWait = () =>
+    toast.info("Please Wait...", {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 10000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  
+
+  notifySuccess = () =>
+    toast.success("Messege Sent 🎉🎉🎉. I'll be in touch soon!", {
+      position: "top-right",
+      autoClose: 10000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  
+  notifyFailure = () =>
+    toast.error("Messege not Sent. Please try again", {
+      position: "top-right",
+      autoClose: 10000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -100,16 +134,20 @@ class Contact extends Component {
       shootButton = <Shake>{button}</Shake>;
     }
     return (
-      <div className={styles.Contact}>
+      <div className={styles.Contact} ref={this.props.contactRef}>
         <ToastContainer />
         <Fade bottom>
-          <Heading>Contact</Heading>
+          <Heading>5. Contact</Heading>
           <h2>
             It’s not too complicated. Simply reach out if you’d like to talk
             further.
           </h2>
           <h1>Let's Talk</h1>
-          <h4>You can also email me directly at imvarun23@gmail.com</h4>
+          <div style={{ "marginBottom": "32px","paddingRight":"1rem" }}>You can also email me directly at - 
+          <span className={styles.Email} onClick={() => window.open("mailto:imvarun23@gmail.com", "_self")}>
+               imvarun23@gmail.com
+              </span>
+          </div>
           <form>
             <div className={styles.FormContainer}>
               <div className={styles.FormNEP}>

@@ -34,19 +34,20 @@ class Skills extends Component {
             <div className={styles.Left}>
               <ul>
                 <li>Languages</li>
-                <li onMouseOver={() => this.changeImg("java")}>Java</li>
-                <li onMouseOver={() => this.changeImg("python")}>Python</li>
-                <li onMouseOver={() => this.changeImg("cpp")}>C++</li>
-                <li>Dart</li>
+                <li>Java</li>
+                <li>Python</li>
                 <li>Javascript</li>
+                <li>C++</li>
+                <li>Dart</li>
+                <li>SQL</li>
               </ul>
               <ul>
                 <li>Frameworks</li>
-                <li onMouseOver={() => this.changeImg("react")}>React</li>
-                <li onMouseOver={() => this.changeImg("flutter")}>Flutter</li>
-                <li onMouseOver={() => this.changeImg("django")}>Django</li>
-                <li onMouseOver={() => this.changeImg("flask")}>Flask</li>
-                <li>XYZ</li>
+                <li>React</li>
+                <li>Flutter</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Node</li>
               </ul>
               <ul>
                 <li>Tools</li>
@@ -54,15 +55,15 @@ class Skills extends Component {
                 <li>Git & Github</li>
                 <li>Bash</li>
                 <li>Postman</li>
-                <li>ABC</li>
+                <li>MongoDB</li>
               </ul>
               <ul>
                 <li>Technologies</li>
-                <li>App Dev</li>
-                <li>Web Dev</li>
+                <li>(Native+Hybrid) App Dev</li>
+                <li>Web Development</li>
                 <li>Blockchain</li>
                 <li>Backend</li>
-                <li>QWE</li>
+                {/* <li>QWE</li> */}
               </ul>
             </div>
             {/* <div className={styles.Right}>
