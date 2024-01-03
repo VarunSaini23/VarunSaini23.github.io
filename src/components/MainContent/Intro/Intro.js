@@ -105,7 +105,7 @@ class Intro extends Component {
             onClick={() => window.open("mailto:imvarun23@gmail.com", "_self")}
             >Get In Touch</div>
             <div className={classes.Resume}
-              onClick={() => window.open("https://drive.google.com/file/d/1ut4UQYgKzWvnNkvQr4FaQOW1jEHhIGfl/view?usp=sharing", "_blank")}>
+              onClick={() => window.open("https://drive.google.com/file/d/1ZhGGObQDNuSGzv6q1Qjkh09Io-37GFML/view?usp=share_link", "_blank")}>
               Resume
               </div>
           </div>
